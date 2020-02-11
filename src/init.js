@@ -1,10 +1,10 @@
 $(document).ready(function() {
   window.dancers = [];
-  // $('.lineUp').on('click', function(event)) {
-  //   for (var i = 0 ; i < window.dancers.length; i++) {
-
-  //   }
-  // }
+  $('.lineUp').on('click', function(event) {
+    for (var i = 0 ; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp();
+    }
+  })
 
 
   $('.addDancerButton').on('click', function(event) {
@@ -34,6 +34,7 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
 
   $('.addSuperHeroButton').on('click', function(event) {
@@ -92,6 +93,7 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
 });
 

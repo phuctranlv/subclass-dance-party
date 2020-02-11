@@ -32,7 +32,7 @@
 // };
 
 var Dancer = function (top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dancer"></span>');
+  this.$node = $('<span class="dancer"><img src="https://www.pinclipart.com/picdir/big/150-1500325_download-homer-simpson-transparent-background-clipart.png" style="max-height:100px;    max-width: 80%;"></span>');
   // this.step =
   this.timeBetweenSteps = timeBetweenSteps;
   // this.top = top;
@@ -58,6 +58,13 @@ Dancer.prototype.setPosition = function(top, left) {
   this.styleSettings = {
     top: top,
     left: left
+  };
+  this.$node.css(this.styleSettings);
+};
+
+Dancer.prototype.lineUp = function() {
+  this.styleSettings = {
+    top: 500
   };
   this.$node.css(this.styleSettings);
 };
