@@ -35,8 +35,8 @@ var Dancer = function (top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   // this.step =
   this.timeBetweenSteps = timeBetweenSteps;
-  this.top = top;
-  this.left = left;
+  // this.top = top;
+  // this.left = left;
   this.step();
   this.setPosition(top, left);
 
@@ -55,9 +55,9 @@ Dancer.prototype.setPosition = function(top, left) {
   // where it belongs on the page. See http://api.jquery.com/css/
   //
 
-  var styleSettings = {
+  this.styleSettings = {
     top: top,
     left: left
   };
-  this.$node.css(styleSettings);
+  this.$node.css(this.styleSettings);
 };
