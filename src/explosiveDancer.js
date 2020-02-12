@@ -1,5 +1,7 @@
 var ExplosiveDancer = function(top, left, timeBetweenSteps) {
+  this.$node = $('<span class="explosiveDancer"><img src="images/dancer2.png" style="max-height:100px;    max-width: 80%;"></span>');
   Dancer.call(this, top, left, timeBetweenSteps);
+
 };
 
 ExplosiveDancer.prototype = Object.create(Dancer.prototype);
@@ -7,22 +9,17 @@ ExplosiveDancer.prototype.constructor = ExplosiveDancer;
 ExplosiveDancer.prototype.step = function () {
   Dancer.prototype.step.call(this);
   // this.$node.toggle();
-  this.$node.on('mouseover', function() {
-    this.styleSettings = {
-      background: '#000000'
-    };
+  this.$node.animate({
+    width: "70%",
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px"
+  }, 1500 );
+  this.$node.css({
+    width: "",
+    marginLeft: "",
+    fontSize: "",
+    borderWidth: ""
   });
-  //   width: "toggle",
-  //   height: "toggle"
-  // }, {
-  //   duration: 5000,
-  //   specialEasing: {
-  //     width: "linear",
-  //     height: "easeOutBounce"
-  //   },
-  //   complete: function() {
-  //     $( this ).after( "<div>Animation complete.</div>" );
-  //   }
-  // });
-  // this.$node.show('explode', {pieces: 5}, 2000);
+  // this.$node.toggle();
 };

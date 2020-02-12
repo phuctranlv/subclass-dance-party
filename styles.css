@@ -41,3 +41,25 @@ body, a:link, a:visited, a:active{
   width: 100px; */
   position:absolute;
 }
+.superHeroDancer{
+  /* border:10px solid red;
+  border-radius:10px; */
+  /* height: 100px;
+  width: 100px; */
+  /* background-image: url('images/dancer.jpg'); */
+  position:absolute;
+}
+.blinkyDancer{
+  /* border:10px solid red;
+  border-radius:10px; */
+  /* height: 100px;
+  width: 100px; */
+  position:absolute;
+}
+.explosiveDancer{
+  /* border:10px solid red;
+  border-radius:10px; */
+  /* height: 100px;
+  width: 100px; */
+  position:absolute;
+}

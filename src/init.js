@@ -64,6 +64,14 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+
+    ////////////////////////////INCOMEPLETE//////////////////////////////////////////////////
+    // $('.superHeroDancer').on('mouseover', function(event) {
+    //   // var newTopPosition = $('.superHeroDancer').css('top') + 100;
+    //   $('.superHeroDancer').css('top', '100px');
+    // })
+    ////////////////////////////INCOMEPLETE//////////////////////////////////////////////////
   });
 
   $('.addExplosiveButton').on('click', function(event) {

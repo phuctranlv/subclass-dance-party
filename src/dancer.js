@@ -32,7 +32,6 @@
 // };
 
 var Dancer = function (top, left, timeBetweenSteps) {
-  this.$node = $('<span class="dancer"><img src="https://www.pinclipart.com/picdir/big/150-1500325_download-homer-simpson-transparent-background-clipart.png" style="max-height:100px;    max-width: 80%;"></span>');
   // this.step =
   this.timeBetweenSteps = timeBetweenSteps;
   // this.top = top;
@@ -68,3 +67,7 @@ Dancer.prototype.lineUp = function() {
   };
   this.$node.css(this.styleSettings);
 };
+
+// Dancer.prototype.superHeroDancerMove = function( ) {
+//   this.$node.attr('img', 'url');i9
+// }
